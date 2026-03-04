@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "corot-truss-example"
+version = "0.1.0"
+description = "OpenSeesPy inclined corotational truss example for teaching (Colab-friendly)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "openseespy",
+    "opsvis",
+    "scipy",
+    "numpy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipykernel",
+    "jupyter",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Repository = "https://github.com/gaaraujo/corotTruss-example"

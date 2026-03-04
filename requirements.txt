@@ -1,0 +1,6 @@
+# corotTruss example — run in Colab or locally
+openseespy
+opsvis
+scipy
+numpy
+matplotlib
